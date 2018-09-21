@@ -1,0 +1,11 @@
+[Unit]
+Description=Simple Service
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=
+ExecStop=
+SyslogIdentifier=simple
+Restart=always
