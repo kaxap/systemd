@@ -1,0 +1,14 @@
+[Unit]
+Description=Simple Service
+After=network.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=
+ExecStop=
+WorkingDirectory=
+SyslogIdentifier=simple
+Restart=always
+RestartSec=5
