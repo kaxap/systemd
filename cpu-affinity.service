@@ -1,0 +1,14 @@
+[Unit]
+Description=Simple Service
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=
+ExecStop=
+WorkingDirectory=
+CPUAffinity=0,1,2,3 #CPU core indexes
+SyslogIdentifier=simple
+Restart=always
+RestartSec=5
