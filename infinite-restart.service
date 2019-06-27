@@ -1,0 +1,19 @@
+[Unit]
+Description=Simple Service
+After=network.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=
+ExecStop=
+WorkingDirectory=
+SyslogIdentifier=simple
+Restart=always
+
+# 'StartLimitInterval' must be greater than 'RestartSec * StartLimitBurst' otherwise the service will be restarted indefinitely.
+# https://serverfault.com/a/800631
+RestartSec=5
+StartLimitBurst=3
+StartLimitInterval=10
