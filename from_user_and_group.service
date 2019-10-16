@@ -1,0 +1,15 @@
+[Unit]
+Description=Running from the specified user and group
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+User=some_user
+Group=user_group_can_be_ommited
+ExecStart=
+ExecStop=
+WorkingDirectory=
+SyslogIdentifier=simple
+Restart=always
+RestartSec=5
